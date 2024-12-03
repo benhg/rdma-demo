@@ -24,9 +24,6 @@ int main() {
 
 
   for (int i = 1; i < world_size; i *= 2) {
-
-
-
     int xor = rank ^ i;
     if (xor < world_size) {
       if (xor < rank) {
